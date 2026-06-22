@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Jupyter / notebook checkpoints
+.ipynb_checkpoints/
+
+# Large/local data files
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.parquet
+data/*.pkl
+
+# Keep data folder structure if needed
+!data/.gitkeep
+
+# Model artifacts
+model/*.h5
+model/*.keras
+model/*.pkl
+model/*.joblib
+
+# Keep model folder structure if needed
+!model/.gitkeep
+
+# MySQL / database dumps
+*.sql
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary test files
+test_mysql_connection.py
+test_predictor.py
+
+# Cache folders
+.cache/
+.streamlit/cache/
