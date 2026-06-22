@@ -47,23 +47,14 @@ data/*.pkl
 !data/.gitkeep
 
 # Model artifacts
-model/*.h5
-model/*.keras
-model/*.pkl
-model/*.joblib
-
-# Keep model folder structure if needed
-!model/.gitkeep
+# model/model.h5, model/scaler.pkl, and model/feature_columns.pkl are intentionally tracked
+# because they are small and required for live prediction deployment.
 
 # MySQL / database dumps
 *.sql
 *.db
 *.sqlite
 *.sqlite3
-
-# Temporary test files
-test_mysql_connection.py
-test_predictor.py
 
 # Cache folders
 .cache/
