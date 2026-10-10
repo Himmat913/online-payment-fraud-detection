@@ -1,0 +1,12 @@
+# Tested together on Python 3.12. The styling targets Streamlit 1.60's DOM and
+# theme options; scikit-learn is pinned to the version that pickled scaler.pkl.
+streamlit==1.60.0
+tensorflow==2.16.1
+scikit-learn==1.6.1
+numpy==1.26.4
+pandas
+plotly
+joblib
+h5py
+# Only needed when a MySQL `transactions` table is configured in secrets.
+mysql-connector-python

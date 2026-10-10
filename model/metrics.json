@@ -1,0 +1,43 @@
+{
+  "_source": "notebooks/fraud-risk-analytics.ipynb, cell 146 output. This is the same training session that saved model.h5, scaler.pkl and feature_columns.pkl (cells 151-153).",
+  "evaluation_set": {
+    "description": "10% held-out split of the SMOTE-resampled dataset: 635,441 real legitimate transactions and 635,441 fraud rows, most of them synthetic SMOTE samples.",
+    "rows": 1270882,
+    "legitimate": 635441,
+    "fraud": 635441,
+    "threshold": 0.5
+  },
+  "accuracy": 0.9397992889977197,
+  "non_fraud": {
+    "precision": 0.9622268275860928,
+    "recall": 0.9155389721469027,
+    "f1_score": 0.9383024878029111,
+    "support": 635441
+  },
+  "fraud": {
+    "precision": 0.9194474337096056,
+    "recall": 0.9640596058485367,
+    "f1_score": 0.9412251846411731,
+    "support": 635441
+  },
+  "macro_avg": {
+    "precision": 0.9408371306478491,
+    "recall": 0.9397992889977197,
+    "f1_score": 0.9397638362220422
+  },
+  "confusion_matrix": {
+    "true_negative": 581771,
+    "false_positive": 53670,
+    "false_negative": 22838,
+    "true_positive": 612603
+  },
+  "training": {
+    "dataset_rows": 6362620,
+    "dataset_fraud_rows": 8213,
+    "train_rows": 10167051,
+    "validation_rows": 1270881,
+    "epochs_run": 3,
+    "epochs_max": 5,
+    "early_stopping": "val_loss, patience 2, best weights restored (epoch 1, val_loss 0.1585)"
+  }
+}

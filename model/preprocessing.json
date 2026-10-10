@@ -1,0 +1,15 @@
+{
+  "_source": "notebooks/fraud-risk-analytics.ipynb, cell 48 (quantiles) and cell 50 (flooring/capping). Values are the 10th and 90th percentiles of the full 6,362,620-row dataset, applied before balance differences were computed (cell 128) and before scaling (cell 134).",
+  "capping": {
+    "amount": [4501.3, 365423.30900000007],
+    "oldbalanceOrg": [0.0, 1822508.289000007],
+    "newbalanceOrig": [0.0, 1970344.7930000005],
+    "oldbalanceDest": [0.0, 2914266.6690000016],
+    "newbalanceDest": [0.0, 3194869.671000002]
+  },
+  "scaled_columns": ["amount", "balance_diff_org", "balance_diff_dest"],
+  "unscaled_columns": ["step"],
+  "transaction_types": ["CASH_IN", "CASH_OUT", "DEBIT", "PAYMENT", "TRANSFER"],
+  "one_hot_baseline": "CASH_IN",
+  "decision_rule": "fraud if score > threshold (notebook cell 146 uses 0.5)"
+}
